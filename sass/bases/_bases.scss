@@ -1,5 +1,21 @@
 @use "../abstracts/" as *;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $secondary-text-color;
+}
+
 h1 {
     @include bigTitle($font-primary, $main-title-color);
 }

@@ -1,0 +1,24 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    background-image: url('../../assets/banner-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logo {
+        position: absolute;
+        left: 66px;
+        top: 50px;
+        z-index: 1;
+    }
+}
