@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;300;400;500;800&display=swap);
+h1 {
+  width: 890px;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FFD15B;
+  line-height: 66px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */

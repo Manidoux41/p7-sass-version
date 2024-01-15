@@ -1,0 +1,12 @@
+
+@mixin bigTitle($ffamily, $color) {
+    width: 890px;
+    text-align: center;
+    font-family: $ffamily;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color;
+    line-height: 66px;
+    margin: 0 auto;
+}

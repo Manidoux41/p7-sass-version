@@ -1,0 +1,16 @@
+{
+  "name": "p7",
+  "version": "1.0.0",
+  "description": "P7 JS 2.0 Les petits plats",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass/main.scss:dist/css/main.css",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.69.7"
+  }
+}
