@@ -13,6 +13,7 @@ html, body {
   font-weight: 400;
   line-height: 1.5;
   color: #1B1B1B;
+  background-color: #EDEDED;
 }
 
 h1 {
@@ -40,7 +41,7 @@ header {
   color: #fff;
   text-align: center;
   background-image: url("../../assets/banner-image.jpg");
-  background-attachment: fixed;
+  background-attachment: inherit;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +51,75 @@ header .logo {
   left: 66px;
   top: 50px;
   z-index: 1;
+}
+
+.searchRecipes {
+  height: 72px;
+  width: 954px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+  display: flex;
+  z-index: 2;
+}
+.searchRecipes .search {
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  color: #7A7A7A;
+  padding-left: 20px;
+  border: none;
+}
+.searchRecipes .search:focus {
+  outline: none;
+}
+.searchRecipes .search i {
+  color: #FFF;
+  z-index: 3;
+}
+.searchRecipes .searchButton {
+  margin: 10px;
+  background-color: #1B1B1B;
+  color: #FFF;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.searchRecipes .searchButton:hover {
+  background-color: #FFD15B;
+}
+.searchRecipes .searchButton i {
+  font-size: 1.5rem;
+}
+
+#results {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  padding: 20px 66px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+#results .recipeCard {
+  width: 30%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+#results .recipeCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#results .recipeCard h3 {
+  position: absolute;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
