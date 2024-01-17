@@ -13,11 +13,15 @@
     .search {
         width: 100%;
         height: 100%;
-        font-size: 22px;
-        color: $input-text-color;
+        font-size: 16px;
+        color: $secondary-text-color;
+        font-family: $font-secondary;
         padding-left: 20px;
         border: none;
 
+        &::placeholder {
+            color: $input-text-color;
+        }
         &:focus {
             outline: none;
         }

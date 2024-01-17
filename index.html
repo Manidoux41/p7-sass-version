@@ -19,13 +19,19 @@
         <img src="./assets/logo.png" alt="logo les petits plats" class="logo" fetchpriority="high">
         <h1>Cherchez parmi plus de 1500 recettes du quotidien, simples et délicieuses</h1>
         <div id="searchRecipes" class="searchRecipes">
-            <input type="text" id="search" class="search" aria-label="Search">
+            <input type="text" id="search" class="search" aria-label="Search" placeholder="Rechercher une recette, un ingrédient...">
             <button class="searchButton" type="submit" aria-label="button request results">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
     </header>
     <main>
+        <div class="filters">
+            <div class="filters__category">
+                <p>Ingredients</p>
+                <span></span>
+            </div>
+        </div>
         <div id="results">
 
         </div>
