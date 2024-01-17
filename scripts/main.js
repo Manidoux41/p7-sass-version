@@ -1,6 +1,7 @@
 import { recipes } from './datas/recipes.js';
 import { displayRecipes } from './functions/displayRecipes.js';
 
+console.log(recipes);;
 
 
 const resultSearch = document.getElementById('search');
