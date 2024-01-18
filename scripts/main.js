@@ -1,5 +1,6 @@
 import { recipes } from './datas/recipes.js';
 import { displayRecipes } from './functions/displayRecipes.js';
+import { filterManagement } from './functions/filterManagement.js';
 
 const resultSearch = document.getElementById('search');
 const buttonSearch = document.querySelector('button');
@@ -16,7 +17,10 @@ buttonSearch.addEventListener('click', () => {
 
 async function init () {
     const recipesArray = await recipes;
-    displayRecipes(recipesArray);
+    window.addEventListener('load', () => {
+        displayRecipes(recipesArray);
+    });
+    filterManagement();
 }
 
 init();

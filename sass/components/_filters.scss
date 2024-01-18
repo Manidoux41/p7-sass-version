@@ -1,7 +1,23 @@
+@use "../abstracts/" as *;
+
 .filters {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    padding: 20px 66px;
     display: flex; 
-    justify-content: flex-start;
     align-items: center;
     gap: 65px;
-    margin: 15px 0;
+    z-index: 4;
+    &__category {
+        width: 195px;
+        height: auto;
+        border-radius: 11px;
+        padding: 16px 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary-text-color;
+    }
 }
