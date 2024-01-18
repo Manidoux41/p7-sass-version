@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.cardTitle {
+    @include infTitle($font-primary, $text-title-color, $secondary-title-font-size, 400);
+}
+
+.cardsectiontitle {
+    @include infTitle($font-secondary, $input-text-color, $tertiary-title-font-size, 700);
+    text-transform: uppercase;
+}

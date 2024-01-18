@@ -4,14 +4,22 @@ export function displayRecipes(recipes) {
         const containerResult = document.getElementById('results');
         containerResult.innerHTML += `
             <div class="recipeCard">
-                <picture fetchpriority="high" class="recipeCard__imgContainer">
-                    <source srcset="../../assets/conver-images/${recipe.image}" type="image/webp">
-                    <img src="../../assets/conver-images/${recipe.image}" alt="${recipe.name}" />
-                </picture>
+                <div  class="recipeCard__imgContainer">
+                    <img data-src="../../assets/conver-images/${recipe.image}" alt="${recipe.name}" class="lazyload" fetchpriority="high"/>
+                </div>
                
                 <div class="recipeCard__infos">
-                    <h2>${recipe.name}</h2>
-                    <p>${recipe.ingredients.map(ingredient => ingredient.ingredient).join(', ')}</p>
+                    <h2 class=cardTitle>${recipe.name}</h2>
+                    <div class="cardSection">
+                        <h3 class="cardsectiontitle">Recette</h3>
+                        <div class="cardSection__description">
+                            <p>${recipe.description}</p>
+                        </div>
+                    </div>
+                    <div class="cardSection">
+                        <h3 class="cardsectiontitle">Ingredient</h3>
+                        <p>${recipe.ingredients.map(ingredient => ingredient.ingredient).join(', ')}</p>
+                    </div>
                 </div>
             </div>
         `

@@ -10,3 +10,10 @@
     line-height: 66px;
     margin: 0 auto;
 }
+
+@mixin infTitle($ffamily, $color, $fontSize, $fontWeight) {
+    font-family: $ffamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}

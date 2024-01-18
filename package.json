@@ -4,13 +4,14 @@
   "description": "P7 JS 2.0 Les petits plats",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch sass/main.scss:dist/css/main.css",
-    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+    "watch": "sass --watch  --style=compressed ./sass/main.scss:dist/css/main.css",
+    "prefix": "postcss ./dist/css/main.css --use autoprefixer -d ./dist/css/prefixed/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
     "sass": "^1.69.7"
   }
 }
